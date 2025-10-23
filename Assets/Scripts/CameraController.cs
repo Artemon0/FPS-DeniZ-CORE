@@ -2,10 +2,23 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    public Transform playerBody;
+    public float moveSpeed = 5f;
     public float mouseSensitivity = 2f;
+    public Transform cameraTransform;
 
-    float xRotation = 0f;
+    private Vector2 moveInput;
+    private Vector2 lookInput;
+    private float xRotation = 0f;
+
+    public void OnMove(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
+    }
+
+    public void OnLook(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        lookInput = context.ReadValue<Vector2>();
+    }
 
     void Start()
     {
@@ -15,13 +28,18 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+        // Движение
+        Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
+        transform.position += move * moveSpeed * Time.deltaTime;
+
+        // Вращение мышью
+        float mouseX = lookInput.x * mouseSensitivity;
+        float mouseY = lookInput.y * mouseSensitivity;
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        playerBody.Rotate(Vector3.up * mouseX);
+        cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        transform.Rotate(Vector3.up * mouseX);
     }
 }
