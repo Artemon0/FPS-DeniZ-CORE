@@ -33,4 +33,11 @@ public class MyCameraController : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0f);
     }
+
+    public void MoveForward(Vector3 move)
+    {
+        transform.forward = move;
+        Camera.allCameras[0].transform.position = transform.position;
+    }
+    
 }

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d517e6ff-24a9-4158-ab6c-c47461e4619e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FPS-Deniz-CORE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPS-Deniz-CORE/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
     </list>
     <list id="2e344560-e01b-47ff-a575-68e900eff943" name="Changes by denis" comment="" />
@@ -49,6 +50,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -117,7 +119,8 @@
       <option name="presentableId" value="Default" />
       <updated>1761215325291</updated>
       <workItem from="1761215327157" duration="1004000" />
-      <workItem from="1761216349490" duration="618000" />
+      <workItem from="1761216349490" duration="1495000" />
+      <workItem from="1761218025456" duration="307000" />
     </task>
     <servers />
   </component>
