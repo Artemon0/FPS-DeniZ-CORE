@@ -46,7 +46,10 @@
     <Analyzer Include="D:\Unity\Editor\6000.2.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\PlayerInputActions.cs" />
+    <Compile Include="Assets\Scripts\AiHelp.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
