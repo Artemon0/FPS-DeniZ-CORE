@@ -1,15 +1,35 @@
 ﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class MyCameraController : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float mouseSensitivity = 2f;
+
+    float rotationX = 0f;
+    float rotationY = 0f;
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
     void Update()
     {
+        // Движение
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
-
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
         transform.position += move * moveSpeed * Time.deltaTime;
+
+        // Вращение мышью
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+
+        rotationY += mouseX;
+        rotationX -= mouseY;
+        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
+
+        transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0f);
     }
 }
