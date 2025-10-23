@@ -32,6 +32,5 @@ public class MyCameraController : MonoBehaviour
         rotationX = Mathf.Clamp(rotationX, -90f, 90f); // Ограничение по вертикали
 
         transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0f);
-    } // надо нажать в unity hub нажать кнопку add -> locate project
-    // хз
+    }
 }
