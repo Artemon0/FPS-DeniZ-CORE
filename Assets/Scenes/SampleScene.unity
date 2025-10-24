@@ -1023,6 +1023,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   extraGroundCheckDistance: 0.05
+  bobEnabled: 1
+  bobSpeed: 10
+  bobAmount: 0.06
+  bobSway: 0.02
+  bobTransitionSpeed: 8
 --- !u!114 &1832527346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,7 +1055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36373aeacda3ca941baca61c75becc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  moveSpeed: 5
+  moveSpeed: 6
   runMultiplier: 1.8
   jumpHeight: 1.5
   gravity: -18
@@ -1063,6 +1068,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   extraGroundCheckDistance: 0.15
+  bobEnabled: 1
+  bobSpeed: 10
+  bobAmount: 0.1
+  bobSway: 0.06
+  bobTransitionSpeed: 8
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
