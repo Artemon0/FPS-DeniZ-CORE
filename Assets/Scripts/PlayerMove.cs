@@ -5,12 +5,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-    [Header("Movement")] public float moveSpeed = 5f;
+    [Header("Movement")] public float moveSpeed = 6f;
     public float runMultiplier = 1.8f;
-    public float jumpHeight = 1.4f;
-    public float gravity = -9.81f;
+    public float jumpHeight = 1.5f;
+    public float gravity = -18f;
 
-    [Header("Mouse Look")] public float mouseSensitivity = 2f;
+    [Header("Mouse Look")] public float mouseSensitivity = 0.6f;
     public Transform cameraTransform;
     public bool lockCursor = true;
 
@@ -48,7 +48,9 @@ public class PlayerMove : MonoBehaviour
         if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            // Cursor.visible = false;
+            Cursor.visible = true;
+           
         }
     }
 

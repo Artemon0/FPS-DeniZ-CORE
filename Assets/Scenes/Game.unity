@@ -943,11 +943,11 @@ MonoBehaviour:
   runMultiplier: 1.8
   jumpHeight: 1.5
   gravity: -18
-  mouseSensitivity: 0.8
+  mouseSensitivity: 0.6
   cameraTransform: {fileID: 255244420}
   lockCursor: 1
   optionalGroundCheck: {fileID: 255244420}
-  groundCheckRadius: 0.2
+  groundCheckRadius: 1
   groundMask:
     serializedVersion: 2
     m_Bits: 1
