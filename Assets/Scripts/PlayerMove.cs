@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-    [Header("Movement")] public float moveSpeed = 5f;
+    [Header("Movement")] public float moveSpeed = 6f;
     public float runMultiplier = 1.8f;
     public float jumpHeight = 1.4f;
     public float gravity = -9.81f;

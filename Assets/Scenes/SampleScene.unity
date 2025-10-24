@@ -1012,16 +1012,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   moveSpeed: 5
   runMultiplier: 1.8
-  jumpHeight: 1.5
-  gravity: -10
-  mouseSensitivity: 0.01
-  cameraTransform: {fileID: 1832527344}
+  jumpHeight: 1.4
+  gravity: -9.81
+  mouseSensitivity: 2
+  cameraTransform: {fileID: 0}
   lockCursor: 1
-  optionalGroundCheck: {fileID: 1408842736}
-  groundCheckRadius: 0.15
+  optionalGroundCheck: {fileID: 0}
+  groundCheckRadius: 0.2
   groundMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 0
   extraGroundCheckDistance: 0.05
 --- !u!114 &1832527346
 MonoBehaviour:
@@ -1052,17 +1052,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   moveSpeed: 5
   runMultiplier: 1.8
-  jumpHeight: 1.4
-  gravity: -10
+  jumpHeight: 1.5
+  gravity: -18
   mouseSensitivity: 1
   cameraTransform: {fileID: 255244420}
   lockCursor: 1
   optionalGroundCheck: {fileID: 255244420}
-  groundCheckRadius: 1
+  groundCheckRadius: 0.2
   groundMask:
     serializedVersion: 2
     m_Bits: 1
-  extraGroundCheckDistance: 1
+  extraGroundCheckDistance: 0.15
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
