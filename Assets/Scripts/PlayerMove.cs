@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-    [Header("Movement")] public float moveSpeed = 6f;
+    [Header("Movement")] public float moveSpeed = 5f;
     public float runMultiplier = 1.8f;
     public float jumpHeight = 1.4f;
     public float gravity = -9.81f;
@@ -14,14 +14,25 @@ public class PlayerMove : MonoBehaviour
     public Transform cameraTransform;
     public bool lockCursor = true;
 
-    [Header("Ground Check")] public Transform optionalGroundCheck; // можно оставить пустым
+    [Header("Ground Check")] public Transform optionalGroundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundMask;
-    public float extraGroundCheckDistance = 0.05f; // запас для тонких коллайдеров
+    public float extraGroundCheckDistance = 0.05f;
+
+    [Header("Camera Bob")] public bool bobEnabled = true;
+    public float bobSpeed = 10f;           // частота при полном сприне
+    public float bobAmount = 0.1f;        // вертикальная амплитуда
+    public float bobSway = 0.06f;          // горизонтальная амплитуда (легкий крен)
+    public float bobTransitionSpeed = 8f;  // скорость нарастания эффекта
 
     private CharacterController cc;
     private Vector3 velocity;
     private float xRotation = 0f;
+
+    // bob state
+    private float bobTimer = 0f;
+    private float bobAmountCurrent = 0f; // 0..1 — сила эффекта
+    private Vector3 cameraOriginalLocalPos;
 
     void Start()
     {
@@ -30,6 +41,9 @@ public class PlayerMove : MonoBehaviour
 
         if (cameraTransform == null && Camera.main != null)
             cameraTransform = Camera.main.transform;
+
+        if (cameraTransform != null)
+            cameraOriginalLocalPos = cameraTransform.localPosition;
 
         if (lockCursor)
         {
@@ -48,6 +62,7 @@ public class PlayerMove : MonoBehaviour
         HandleLook(lookInput);
         HandleMove(moveInput, run);
         HandleJumpAndGravity(jump);
+        HandleCameraBob(moveInput, run);
     }
 
     Vector2 ReadMoveInput()
@@ -146,24 +161,25 @@ public class PlayerMove : MonoBehaviour
 
     bool IsGrounded()
     {
-        // позиция проверки: понижение от низа CharacterController
+        if (optionalGroundCheck != null)
+        {
+            Collider[] hits = Physics.OverlapSphere(optionalGroundCheck.position, groundCheckRadius, groundMask, QueryTriggerInteraction.Ignore);
+            for (int i = 0; i < hits.Length; i++)
+            {
+                Collider c = hits[i];
+                if (c == null) continue;
+                if (c.transform.IsChildOf(transform)) continue;
+                return true;
+            }
+            return cc.isGrounded;
+        }
+
         Vector3 bottomCenter = transform.position + Vector3.up * (cc.center.y - cc.height / 2f);
         Vector3 checkPos = bottomCenter + Vector3.up * (groundCheckRadius + extraGroundCheckDistance);
 
-        // собираем все коллайдеры в сфере
-        Collider[] hits = Physics.OverlapSphere(checkPos, groundCheckRadius, groundMask, QueryTriggerInteraction.Ignore);
-
-        for (int i = 0; i < hits.Length; i++)
-        {
-            Collider c = hits[i];
-            if (c == null) continue;
-            // пропускаем коллайдеры, принадлежащие самому игроку (этот объект или дочерние)
-            if (c.transform.IsChildOf(transform)) continue;
-            // найден внешний коллайдер земли — grounded
+        if (Physics.SphereCast(checkPos, groundCheckRadius, Vector3.down, out RaycastHit hit, groundCheckRadius + extraGroundCheckDistance, groundMask, QueryTriggerInteraction.Ignore))
             return true;
-        }
 
-        // дополнительная страховка: fallback на CharacterController.isGrounded
         return cc.isGrounded;
     }
 
@@ -181,6 +197,35 @@ public class PlayerMove : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         cc.Move(velocity * Time.deltaTime);
+    }
+
+    void HandleCameraBob(Vector2 moveInput, bool isRunning)
+    {
+        if (!bobEnabled || cameraTransform == null) return;
+
+        // сила эффекта: зависит от скорости движения и оттого, бежим ли мы
+        float moveMagnitude = new Vector2(moveInput.x, moveInput.y).magnitude;
+        float targetBobStrength = (isRunning ? 1f : 0.4f) * moveMagnitude;
+
+        // плавно интерполируем силу эффекта
+        bobAmountCurrent = Mathf.Lerp(bobAmountCurrent, targetBobStrength, Time.deltaTime * bobTransitionSpeed);
+
+        // увеличиваем таймер только если есть сила
+        if (bobAmountCurrent > 0.001f)
+            bobTimer += Time.deltaTime * bobSpeed;
+        else
+            bobTimer = 0f;
+
+        // синусоидальные смещения
+        float bobOffsetY = Mathf.Sin(bobTimer * 2f) * bobAmount * bobAmountCurrent;
+        float bobOffsetX = Mathf.Sin(bobTimer) * bobSway * bobAmountCurrent;
+        float bobTilt = Mathf.Sin(bobTimer) * bobSway * 5f * bobAmountCurrent; // небольшой крен
+
+        // комбинируем исходную позицию камеры с эффектом
+        cameraTransform.localPosition = cameraOriginalLocalPos + new Vector3(bobOffsetX, bobOffsetY, 0f);
+
+        // легкий крен камеры по локальной Z для ощущения наклона
+        cameraTransform.localRotation = Quaternion.Euler(cameraTransform.localRotation.eulerAngles.x, cameraTransform.localRotation.eulerAngles.y, bobTilt);
     }
 
     void OnDrawGizmosSelected()
