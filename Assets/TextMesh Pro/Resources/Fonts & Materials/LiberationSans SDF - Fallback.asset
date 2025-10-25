@@ -337,6 +337,9 @@ Texture2D:
   m_Width: 1
   m_Height: 1
   m_CompleteImageSize: 1
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_MipsStripped: 0
   m_TextureFormat: 1
@@ -363,8 +366,13 @@ Texture2D:
   m_ColorSpace: 0
   m_PlatformBlob: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   image data: 0
   _typelessdata: 
+=======
+  image data: 1
+  _typelessdata: 00
+>>>>>>> Stashed changes
 =======
   image data: 1
   _typelessdata: 00
