@@ -61,7 +61,6 @@
     <Compile Include="Assets\Perfab\NextBotMaker\Scripts\Player Code\FPSController.cs" />
     <Compile Include="Assets\Materials\4K Tiled Ground Textures p2\Scripts\AutoSpriteChanger_gp2.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
-    <Compile Include="Assets\Scripts\PlayerMove_FixedCamera.cs" />
     <Compile Include="Assets\Scripts\DotOnCamera.cs" />
     <Compile Include="Assets\Perfab\NextBotMaker\Scripts\NextBot Code\NextBotController.cs" />
     <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
