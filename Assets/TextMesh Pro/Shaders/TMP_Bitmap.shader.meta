@@ -7,3 +7,10 @@ ShaderImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+  uploadId: 711761

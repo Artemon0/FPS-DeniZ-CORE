@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ba266283abbfcf949a3a48fe6b34bfad
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/DotsClientSettings.asset
+  uploadId: 711761

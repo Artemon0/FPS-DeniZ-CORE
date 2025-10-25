@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 73e473bfa8e20c64faa470378f5e0d7e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Body_HDRP.mat
+  uploadId: 711761

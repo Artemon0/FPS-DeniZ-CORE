@@ -2,32 +2,37 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - CinemachineTarget
+  - LS_Light
+  - LS_Camera
+  - LightStageCtrl
+  - LS_LightPos
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Environment
   - Water
   - UI
+  - Explosion
+  - Explosion Density
+  - Explosion Color
+  - Explosion Renderer
+  - Mud - Character LOD2
+  - Mud - Ground
+  - test
+  - Character - S1 - Colliders
+  - Character - S2 - Colliders
+  - Character - S3 - Colliders
+  - Characters
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - EyeBlur_Sclera
+  - EyeBlur_Tearline
   - 
   - 
   - 
@@ -50,27 +55,11 @@ TagManager:
   - Light Layer 5
   - Light Layer 6
   - Light Layer 7
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Decal Layer default
+  - Decal Layer 1
+  - Decal Layer 2
+  - Decal Layer 3
+  - Decal Layer 4
+  - Decal Layer 5
+  - Decal Layer 6
+  - Decal Layer 7

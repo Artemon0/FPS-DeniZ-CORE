@@ -1,8 +1,16 @@
 fileFormatVersion: 2
 guid: e73a58f6e2794ae7b1b7e50b7fb811b0
-timeCreated: 1484172806
-licenseType: Pro
 NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF -
+    Drop Shadow.mat
+  uploadId: 711761

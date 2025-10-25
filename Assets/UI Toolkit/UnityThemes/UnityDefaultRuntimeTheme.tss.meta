@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 677e44f6a2b095e4c8347f519e8a1eab
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 12388, guid: 0000000000000000e000000000000000, type: 0}
+  disableValidation: 0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss
+  uploadId: 711761

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f6d148d888ffbf54b9afe9936dfaec1f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/StarterAssets/ThirdPersonController/Prefabs/MainCamera.prefab
+  uploadId: 711761

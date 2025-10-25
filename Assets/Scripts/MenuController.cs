@@ -19,7 +19,7 @@ public class RuntimeMenuCreatorScene : MonoBehaviour
     [Header("UI")]
     public Transform uiParent;
     public Font uiFont;
-    public Vector2 buttonSize = new Vector2(200, 60);
+    public Vector2 buttonSize = new Vector2(400, 100);
     public int spacing = 20;
 
     GameObject runtimeCanvasGO;

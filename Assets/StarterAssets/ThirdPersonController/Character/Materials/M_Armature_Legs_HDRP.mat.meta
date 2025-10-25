@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ffae50f9d1406be418850f730850a256
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Legs_HDRP.mat
+  uploadId: 711761

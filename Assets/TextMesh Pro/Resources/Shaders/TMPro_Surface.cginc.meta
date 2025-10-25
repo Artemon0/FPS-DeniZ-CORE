@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 782686b8e0c7bef45bec2c9394ebffd7
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc
+  uploadId: 711761

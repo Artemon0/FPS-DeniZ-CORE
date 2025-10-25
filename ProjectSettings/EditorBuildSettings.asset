@@ -6,9 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Loader.unity
+    guid: edd4f11232c8fee4eb91a1269e7298f4
+  - enabled: 1
+    path: Assets/Scenes/StartJourney.unity
+    guid: 1a795a24d6ebd304a84b98096fdef8e8
+  - enabled: 1
+    path: Assets/Scenes/StartJourney_Lighting.unity
+    guid: 756ede6ad20f3ef48b82fc94d3666ae1
+  - enabled: 1
+    path: Assets/Scenes/StartJourney_Env.unity
+    guid: b30ae1fefe88f5e4a9e12b818d23addd
+  - enabled: 1
+    path: Assets/Scenes/StartJourney_Scatter.unity
+    guid: 84e99b5aae0734543b07be9d126603e0
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 8870ea1c4ba06d141bf1dc94a21bbcee, type: 2}
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.addressableassets: {fileID: 11400000, guid: 399421f73d61da34595f14d3c757a962, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 7b9531cb843029442aa9e529fcadf4af, type: 3}
   m_UseUCBPForAssetBundles: 0

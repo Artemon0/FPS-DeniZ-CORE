@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8a8965bbb6d448c8ba0110d63fb875bd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Editor/MiscUtils.cs
+  uploadId: 711761

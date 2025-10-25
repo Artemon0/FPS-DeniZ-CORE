@@ -1,8 +1,14 @@
 fileFormatVersion: 2
 guid: 8f05276190cf498a8153f6cbe761d4e6
-timeCreated: 1480316860
-licenseType: Pro
 TextScriptImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/TextMesh Pro/Sprites/EmojiOne.json
+  uploadId: 711761

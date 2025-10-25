@@ -1,0 +1,1615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{55d9a54f-c5fd-8f9f-eb77-bf670008f48a}</ProjectGuid>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Unity.VisualEffectGraph.Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\Unity.VisualEffectGraph.Editor\</OutputPath>
+    <DefineConstants>UNITY_6000_2_8;UNITY_6000_2;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_AMD;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLOUD_SERVICES_ENGINE_DIAGNOSTICS;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;GAIA_2_PRESENT;GAIA_PRO_PRESENT;GAIA_MESH_PRESENT;CROSS_PLATFORM_INPUT;HDPipeline;PW_ADDRESSABLES;OBI_ONI_SUPPORTED;STARTER_ASSETS_PACKAGES_CHECKED;UNITY_POST_PROCESSING_STACK_V2;VFX_HAS_TIMELINE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169,0649</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="D:\Unity\Editor\6000.2.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
+    <Analyzer Include="D:\Unity\Editor\6000.2.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
+    <Analyzer Include="D:\Unity\Editor\6000.2.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotEncapsulated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Spawn\VFXSpawnerSetAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXAbstractParticleOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Exp.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SequentialLine.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Parameters\Deprecated\VFXCurrentAttributeParameter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Fractional.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\TriangleWave.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Blackboard\VFXBlackboardCategory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\SDF\BakeTool\SdfBakerSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LoadTexture2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Profiling\VFXSystemProfilerUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleGradient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Multiply.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Forces\ForceHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Parameters\VFXAttributeParameter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\RGBtoHSV.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\VFXErrorManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Update\BackupOldPosition.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXPropertyAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXBlockController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\FlipBook\FlipbookPlay.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionCast.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXFlowEdgeController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionAABoxDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXStickyNote.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Maximum.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Blackboard\VFXBlackboard.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\PositionDepth.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionAbstractFloatOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionBox.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionCamera.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXBuiltInExpression.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotDirection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\BitwiseXor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Epsilon.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleSDF.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleTextureCubeArray.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\StringPropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Collision\CollisionShape.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Velocity\VelocityDirection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SkinnedMeshRendererTransform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXStringField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Forces\ConformToSphere.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Forces\ConformToSDF.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\InverseLerp.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXMinMaxSliderField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\VFXBlockUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXBasicInitialize.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXMeshOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotTexture2DArray.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\HLSL\CustomHLSL.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Update\Age.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleTexture3D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Parameters\Deprecated\VFXSourceAttributeParameter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Update\Reap.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PerlinNoise.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\VFXModel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXPlanarPrimitiveOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SawtoothWave.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utils\VFXAttributeHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\Element3D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionAbstractValues.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\TransformDirection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXAttachPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\pCache\PointCacheAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Data\VFXDataParticle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionLoadCameraBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\SpaceablePropertiesRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleTextureCube.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\DistanceToSphere.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Core\VFXSettingAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Modulo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXParameterNodeController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXTypeUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utils\VFXSystemBorder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LookAt.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\MeshIndexCount.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Compiler\VFXUniformMapper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\TransformVector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXSubgraphContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotTextureCubeArray.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CollisionSphereDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Collision\CollisionOrientedBox.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Clamp.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotAnimationCurve.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Compiler\VFXCodeGenerator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Length.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\pCache\BakeTool\PointCacheBakeTool.Mesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\TransformPosition.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SequentialCircle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\TransformVector4.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\Playables\VisualEffectControlClipEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Data\VFXDataSpawner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXTypes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXComposedShading.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\TextureDimensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\MeshTriangleCount.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXVector2Field.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Remap.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Collision\CollisionDepth.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionExtractComponent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionShape.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\VFXManagerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utils\VFXResources.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotTransform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\PackageInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXReorderableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXTypesGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LogicalAnd.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\VectorFieldImporter\Editor\VectorFieldImporterEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LoadTexture2DArray.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXBasicGPUEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\CurlNoise.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Forces\Turbulence.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\DistanceToPlane.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXBasicUpdate.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotFlipBook.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\BitwiseAnd.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionColor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionSphereDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotCameraBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\PolarToRectangular.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXOutputUpdate.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\SamplesLinkPackageManagerExtension.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utils\VFXContextBorder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Divide.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\ColorLuma.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\CameraHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\DotGraph\DotGraph.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Manipulators\SuperCollapser.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LogicalNor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXTextEditorField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\NoiseBaseOld.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXGroupNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Forces\VectorFieldForce.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXPlaneGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\3D\Rotate3DManipulator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SquaredLength.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\pCache\PointCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\PropertyBinding\VFXPropertyBinderEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\VFXContextEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionSphere.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXGroupNodeController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\Vector3PropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionAbstractNumericOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\GPUEventOnDie.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXOutputEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Spawn\VFXSpawnerPeriodicBurst.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Blackboard\VFXBlackboardAttributeField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXMultiMeshHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXBlockUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionDepth.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionMath.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\VFXCustomAttributeDescriptorEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotTexture3D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleMesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\PerParticleTotalTime.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\TransformMatrix.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Compiler\VFXExpressionMapper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\RectangularToPolar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotSphere.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXFlowEdge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXBasicEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXStringFieldProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\DotGraph\DotAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Velocity\VelocityTangent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\VoroNoise2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Discretize.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CrossProductDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Switch.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleTexture3D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleSDF.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\PropertyBinding\VFXBinderEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXEdgeDragInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\Vector2PropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\TemplateWindow\VFXTemplateHelperInternal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXEdgeConnector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\CustomHLSL.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Blackboard\VFXBlackboardField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXFlowAnchor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Blackboard\VFXBlackboardPropertyView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXContextController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Debug\DotGraphOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SamplePointCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\SimplePropertiesRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\VFXParameterInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionLineDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\pCache\BakeTool\PointCacheBakeTool.Texture.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Parameters\Deprecated\VFXBuiltInParameter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\CurvePropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Add.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleTextureCubeArray.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXNodeController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\VFXSlotContainerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXEnumValuePopup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\SphereVolumeDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXCircleGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotMatrix4x4.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\NumericPropertiesRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionTextureDim.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\ConeVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionTextureValues.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Collision\CollisionSphere.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXBasicSpawner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Profiling\VFXProfilingBoard.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Spawn\VFXSpawnerBurstOld.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\DotProduct.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXConeGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionCircleDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\BitwiseRightShift.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Condition.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXProperty.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXMatrix4x4Field.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXLineStripOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleIndex.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\VFXSlotContainerModel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXComposedParticleStripOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Update\AngularEulerIntegration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\GPUEventAlways.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\NoiseBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleAttributeMap.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\ConstructMatrix.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXContextDataAnchorController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\BitwiseLeftShift.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Sign.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXPlanarPrimitiveHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\VFXSubgraphBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SquareRoot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXVCSDropdownButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\ObjectPropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\ShaderGraph\VFXShaderGraphPostProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Minimum.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\TorusVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\VisualElementExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Data\VFXDataMesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Negate.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\pCache\PCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CollisionAABoxDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXCopyPasteCommon.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Log.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Noise.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionTorusDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\RemapToNegOnePosOne.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXEditableDataAnchor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\SetCustomAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Velocity\VelocitySpherical.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXBoxGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Velocity\VelocityRandomize.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LoadTexture3D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXComposedParticleOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Spawn\VFXSpawnerConstantRate.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\TorusVolumeDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXCompileDropdownButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\VectorPropertiesRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXParameterUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotGradient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXOperatorAnchorController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\3D\Preview3D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\ChangeSpace.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\VFXSystemNames.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\VFXOperator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\VFXCustomAttributeDescriptor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXStaticMeshOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXSettingController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleTexture2DArray.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\IVFXSubRenderer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Debug\VFXUIDebug.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Distance.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\IVFXAttributesManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXOperatorUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\KillSphereDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Swizzle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\HSVtoRGB.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SineWave.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Controller\VFXViewControllerExpressions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotPosition.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\ShaderGraph\IRequireVFXContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\pCache\Operator\VFXOperatorPointCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\VFXViewPreference.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utils\VFXDebugWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXTransformGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionSDFDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\HLSL\HLSLParser.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Power.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionFlow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXDataEdgeController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utils\VFXHelpURLAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXPicker.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Forces\Force.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Blackboard\VFXBlackboardFieldBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\pCache\BakeTool\PointCacheBakeTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXBitField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Collision\CollisionSDF.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\GPUEvent\TriggerEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Gizmo\VFXGizmo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\RemapToZeroOne.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXBasicCubeOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CylinderVolumeDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Controller\VFXViewController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionAbstract.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\VisualEffectEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\BitwiseComplement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXTask.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\AppendVector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Spawn\VFXSpawnerVariableRate.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleTexture2DArray.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Collision\CollisionPlane.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Gizmo\VFXGizmoUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionMesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Floor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\VFXAnalytics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\VisualEffectGraphShortcuts.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXStringFieldPushButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\OneMinus.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotMesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionBakeGradient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\VFXOperatorUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CollisionPlaneDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionStrips.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Core\VFXEnums.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Parameters\VFXDynamicBuiltInParameter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Controllers\Controller.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\CrossProduct.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\BoundsRecorder\VFXBoundsRecorder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Parameters\VFXParameter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\ViewportToWorldPoint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\VFXParameterEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Forces\Drag.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\VectorFieldImporter\Editor\VectorFieldImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\KillSphereDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\RatioOverStrip.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionTorusDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXFlipBookField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleTexture2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Reciprocal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotTextureCube.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionSDF.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Attribute\CustomAttributeUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\TileWarp.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LoadCameraBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\MainCamera.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionBakeCurve.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\RandomSelector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\VFXSubgraphOperator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotGraphicsBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXDataAnchorController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\VFXDecalOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Velocity\VelocityBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\ExposedProperty\ExposedPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Normalize.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotFloat2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXDataEdge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleCameraBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\SetAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionCircleDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\InverseTRSMatrix.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\SDF\BakeTool\SdfBakerPreview.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionSphereDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\PropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Attribute\AttributeMassFromVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXOutputDataAnchor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CellularNoise.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Collision\CollisionCone.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXGlobalSort.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CollisionSphereDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\ShaderGraph\VFXSubTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXAttributeExpression.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXTypeExtension.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleCameraBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\SDF\BakeTool\SDFBakeTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LogicalNand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXCopy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Collision\CollisionBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Core\VFXLibrary.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXComposedTopology.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotObject.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SquaredDistance.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Compiler\VFXGraphCompiledData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CircleAreaDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\VFXUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleGradient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Orientation\Orient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\VFXParameterEnumValuePropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Output\CameraFade.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXPaste.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Orientation\ConnectTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\ShaderGraph\VFXShaderGraphHelpers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionConeDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXLabeledField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXNodeProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Size\ScreenSpaceSize.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXParameterController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\RectangularToSpherical.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\AgeOverLifetime.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Controller\VFXSystemController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Absolute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\VFXAssetEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXMultiOperatorEdit.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Controller\VFXViewControllerUndo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXSlotContainerController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleCurve.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Controller\VFXGraphValidation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\PositionConeDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Color\ColorOverLife.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\VFXBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Spawn\VFXAbstractSpawner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Asin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXQuadStripOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Smoothstep.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\VFXAttributesManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Cosine.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\PeriodicTotalTime.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotUint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionCone.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\VFXComponentBoard.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\VFXViewWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionAbstractBoolOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Branch.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\KillAABoxDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Output\SubpixelAA.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\pCache\Importer\PointCacheImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionCircle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\FilterPopup\VFXFilterWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Acos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\SanitizeHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXPointOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXHelpDropdownButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Core\VFXSRPBinder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionCombine.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Core\VFXConverter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\BoolPropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Core\VFXSerializer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\SimplexNoise.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Compiler\VFXExpressionGraph.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LogicalOr.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Rotate3D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXIconBadge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\ListPropertiesRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionAbstractUintOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXSliderField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Subtract.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleTextureCube.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXVector4Field.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionTorus.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Sequential3D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionTransform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\VFXGraph.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Blackboard\VFXBlackboardAttributeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Compiler\VFXShaderSnippets.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SphericalToRectangular.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\VFXTypeDefinition.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\AABoxVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXAbstractRenderedOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotColor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\BoundsRecorder\VFXBoundsSelector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Profiling\VFXAnchoredProfilerUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXNodeUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleBezier.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXTypesDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\GetSpawnCount.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXSphereGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Pi.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CollisionSDFDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\GPUEventRate.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CollisionCylinderDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\GetCustomAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Parameters\VFXInlineOperator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\FilterPopup\VFXBlockProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\CircleArea.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXBlockSubgraphContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Velocity\VelocitySpeed.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotVector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\BitwiseOr.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXColorField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotFloat.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXVector3Field.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Blackboard\VFXBlackboardRow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\TransposeMatrix.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Step.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Compiler\VFXSGInputs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleTexture2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXSortingUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotSkinnedMeshRenderer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Round.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\Implementations\VFXLineOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotOrientedBox.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionNoise.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\HLSLPropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Atan.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\OrientedBoxVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SpawnState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionMesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\ConeVolumeDeprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\ValueNoise.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\VFXBlockEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionLoadTexture.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXSRPSubOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Contexts\VFXAbstractComposedParticleOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXDataAnchor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Blackboard\VFXBlackboardAttributeRow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Tangent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\ShaderGraph\VFXShaderGraphParticleOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Ceiling.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Profiling\VFXContextProfilerUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\VFXContextUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\TemplateWindow\VFXTemplateHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\VFXSlot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Random.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\TemplateWindow\CreateFromTemplateDropDownButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionRandom.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXOperatorController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionLine.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\DistanceToLine.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\VFXAssetEditorUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Controllers\IControlledElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSampleAttributeMap.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXSaveDropdownButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Atan2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\ColorPropertyRM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\WorldToViewportPoint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotFloat3.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionSpawnerState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\MeshVertexCount.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Spawn\VFXSpawnerBurst.cs" />
+    <Compile Include="Assets\Code\Scattering\Editor\PointCacheImporter\AssemblyBridge\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SquareWave.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Deprecated\CollisionConeDeprecatedV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\Playables\VisualEffectControlClipInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXLineGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXControl.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Lerp.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\BoundsRecorder\VFXBoundsRecorderField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\ShaderGraph\VFXOldShaderGraphHelpers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Data\VFXData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotTexture2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Rotate2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Saturate.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotFloat4.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Data\VFXDataOutputEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXTextEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotBool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\AdvancedVisualEffectEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Forces\Gravity.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Types\VFXTorusGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleCurve.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SampleBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\EventTester\VFXEventTesterWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\VFXConvertSubgraph.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Elements\Controllers\VFXFlowAnchorController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Attribute\AttributeFromMap.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Update\EulerIntegration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Inspector\GizmoController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Spawn\VFXSpawnerCustomWrapper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\Playables\VisualEffectControlSceneOverlay.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\DropDownButtonBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SphereVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Controller\VFXGraphUndoCursor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Attribute\AttributeFromCurve.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Manipulators\DownClickable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Compiler\VFXShaderWriter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Blocks\Implementations\Position\PositionSequential.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\VFXAbstractOperatorNew.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\Sine.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Expressions\VFXExpressionHLSL.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Core\VFXLibraryStringHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Slots\Implementations\VFXSlotInt.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\BufferCount.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Utilities\DotGraph\DotElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\LogicalNot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Models\Operators\Implementations\SplitMatrix.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\Controls\VFXEnumField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@7e0bedf605eb\Editor\GraphView\Views\Properties\GradientPropertyRM.cs" />
+    <None Include="Assets\Code\Scattering\Editor\PointCacheImporter\AssemblyBridge\VfxAsmRef.asmref" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AMDModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AMDModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ContentLoadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GraphicsStateCollectionSerializerModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.GraphicsStateCollectionSerializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HierarchyCoreModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.HierarchyCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IdentifiersModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.IdentifiersModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputForUIModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputForUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InsightsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.InsightsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.MarshallingModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.MarshallingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.MultiplayerModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.MultiplayerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.NVIDIAModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.PropertiesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ShaderVariantAnalyticsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ShaderVariantAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConsentModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConsentModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.AccessibilityModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.AdaptivePerformanceModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.AdaptivePerformanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.BuildProfileModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.BuildProfileModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.ClothModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreBusinessMetricsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreBusinessMetricsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorToolbarModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.EditorToolbarModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EmbreeModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.EmbreeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GIModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphicsStateCollectionSerializerModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphicsStateCollectionSerializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GridAndSnapModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.GridAndSnapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GridModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.InAppPurchasingModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.InAppPurchasingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.LevelPlayModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.LevelPlayModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.MultiplayerModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.MultiplayerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Physics2DModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PhysicsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PresetsUIModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.PresetsUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PropertiesModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.PropertiesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SafeModeModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.SafeModeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneViewModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.ShaderFoundryModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.ShaderFoundryModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SketchUpModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.SketchUpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpriteMaskModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpriteShapeModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SubstanceModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TerrainModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextRenderingModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TilemapModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.TreeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomationModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIAutomationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UmbraModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VFXModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VideoModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XRModule">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UWP.Extensions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Cecil.Awesome">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.entities@e581b903be8e\Unity.Entities.CodeGen\Unity.Cecil.Awesome.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.ext.nunit@031a54704bff\net40\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad\Lib\Editor\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad\Lib\Editor\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Hashing">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.nuget.mono-cecil@d78732e851eb\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry.AccessControl">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Win32.Registry.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.SystemEvents">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Win32.SystemEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition.Registration">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.ComponentModel.Composition.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Odbc">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Data.Odbc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OleDb">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Data.OleDb.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.EventLog">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Diagnostics.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.PerformanceCounter">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Diagnostics.PerformanceCounter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.DirectoryServices.AccountManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices.Protocols">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.DirectoryServices.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Formats.Asn1">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.AccessControl">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.IO.FileSystem.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes.AccessControl">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.IO.Pipes.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Ports">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.IO.Ports.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.ServiceModel">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Private.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Context">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Reflection.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Runtime.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.AccessControl">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Cng">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Cryptography.Cng.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Syndication">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Syndication.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess.ServiceController">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceProcess.ServiceController.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Speech">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Speech.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.AccessControl">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Threading.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services.Description">
+      <HintPath>D:\Unity\Editor\6000.2.8f1\Editor\Data\NetStandard\EditorExtensions\System.Web.Services.Description.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Unity\Proj\FPS-DeniZ-CORE\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d8a2a4f240e943945bac47f1cffd371d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile_Ztest.shader
+  uploadId: 711761

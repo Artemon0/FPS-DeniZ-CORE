@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2f88e27d73869794184b78704fb6cdc0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Editor/WarScene_Debris_Color.colors
+  uploadId: 711761

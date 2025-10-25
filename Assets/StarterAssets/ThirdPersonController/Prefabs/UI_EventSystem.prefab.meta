@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f382fc3dd971d67429310892608c4f26
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298911
+  packageName: 'Time Ghost: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/StarterAssets/ThirdPersonController/Prefabs/UI_EventSystem.prefab
+  uploadId: 711761
