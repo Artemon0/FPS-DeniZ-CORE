@@ -26,7 +26,7 @@ public class NextBotController : MonoBehaviour
     bool isPlayingMusic = false;
     bool hasTriggered = false;
 
-    private double timer = 0;
+    private double timer = 0.0;
     
 
     void Start()
@@ -49,7 +49,7 @@ public class NextBotController : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (!player || hasTriggered) return;
+        if (!player || hasTriggered  && timer > 2) return;
 
         // Immediately update the destination to the player's position
         agent.SetDestination(player.position);
@@ -79,7 +79,7 @@ public class NextBotController : MonoBehaviour
 
     void TriggerCatch()
     {
-        if (hasTriggered) return;
+        if (hasTriggered && timer > 2) {return;}
         hasTriggered = true;
 
         // Stop all AudioSources in the scene

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class My_First_Person_Movement : MonoBehaviour
 {
@@ -40,16 +41,10 @@ public class My_First_Person_Movement : MonoBehaviour
         MoveCamera();
 
 
-        if (Input.GetKeyUp(KeyCode.RightShift))
-        {
-            Player.localScale = new Vector3(1f, 1f, 1f);
-            Sneaking = false;
-        }
-
-
         if (GetPlayerPosition().y < -10)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            ShowTimer();
         }
 
         timer += Time.deltaTime;
@@ -57,6 +52,7 @@ public class My_First_Person_Movement : MonoBehaviour
         if (isRespawnButtonPressed(KeyCode.R) && timer > 2.0)
         {
             isDied = true;
+            ShowTimer();
         }
 
 
@@ -126,5 +122,10 @@ public class My_First_Person_Movement : MonoBehaviour
     void Die()
     {
         return;
+    }
+
+    public void ShowTimer()
+    {
+        Console.WriteLine("Timer: " + timer + " seconds");
     }
 }

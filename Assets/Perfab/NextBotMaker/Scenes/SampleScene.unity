@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ed1b96f450054e85d12aed5ec7aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 15
   musicRange: 12
   catchRange: 2
   catchVerticalRange: 3
