@@ -3,66 +3,55 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 #endif
 
-[RequireComponent(typeof(CharacterController))]
 public class PlayerMove : MonoBehaviour
 {
-    [Header("Movement")]
-    public float moveSpeed = 6f;
+    [Header("Movement")] public float moveSpeed = 6f;
     public float runMultiplier = 1.8f;
     public float jumpHeight = 1.5f;
     public float gravity = -18f;
 
-    [Header("Mouse Look")]
-    public float mouseSensitivity = 0.6f;
+    [Header("Mouse Look")] public float mouseSensitivity = 0.6f;
     public Transform cameraTransform;
     public bool lockCursor = true;
-    public bool hideCursor = true;
 
-    [Header("Ground Check")]
-    public Transform optionalGroundCheck;
+    [Header("Ground Check")] public Transform optionalGroundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundMask;
     public float extraGroundCheckDistance = 0.05f;
 
-    [Header("Camera Bob")]
-    public bool bobEnabled = true;
-    public float bobSpeed = 10f;
-    public float bobAmount = 0.1f;
-    public float bobSway = 0.06f;
-    public float bobTransitionSpeed = 8f;
+    [Header("Camera Bob")] public bool bobEnabled = true;
+    public float bobSpeed = 10f;           // частота при полном сприне
+    public float bobAmount = 0.1f;        // вертикальная амплитуда
+    public float bobSway = 0.06f;          // горизонтальная амплитуда (легкий крен)
+    public float bobTransitionSpeed = 8f;  // скорость нарастания эффекта
 
-    CharacterController cc;
-    Vector3 velocity;
-    float xRotation = 0f;
+    private CharacterController cc;
+    private Vector3 velocity;
+    private float xRotation = 0f;
 
-    // bob
-    float bobTimer = 0f;
-    float bobAmountCurrent = 0f;
-    Vector3 cameraOriginalLocalPos;
-
-    void Awake()
-    {
-        cc = GetComponent<CharacterController>();
-    }
+    // bob state
+    private float bobTimer = 0f;
+    private float bobAmountCurrent = 0f; // 0..1 — сила эффекта
+    private Vector3 cameraOriginalLocalPos;
 
     void Start()
     {
-        // cache camera
-        if (cameraTransform == null && Camera.main != null) cameraTransform = Camera.main.transform;
-        if (cameraTransform != null) cameraOriginalLocalPos = cameraTransform.localPosition;
+        cc = GetComponent<CharacterController>();
+        if (cc == null) cc = gameObject.AddComponent<CharacterController>();
 
-        // ensure controller center consistent with height (do not modify height)
-        cc.center = new Vector3(cc.center.x, cc.height / 2f, cc.center.z);
+        if (cameraTransform == null && Camera.main != null)
+            cameraTransform = Camera.main.transform;
 
-        // cursor
+        if (cameraTransform != null)
+            cameraOriginalLocalPos = cameraTransform.localPosition;
+
         if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = !hideCursor;
+            // Cursor.visible = false;
+            Cursor.visible = true;
+           
         }
-
-        // Make sure camera stays at original local pos (no crouch logic anymore)
-        if (cameraTransform != null) cameraTransform.localPosition = cameraOriginalLocalPos;
     }
 
     void Update()
@@ -95,7 +84,7 @@ public class PlayerMove : MonoBehaviour
             if (Gamepad.current != null)
             {
                 Vector2 gp = Gamepad.current.leftStick.ReadValue();
-                if (gp.sqrMagnitude > 0.001f) return gp.normalized;
+                if (gp.sqrMagnitude > 0.001f) return gp;
             }
 
             return k.normalized;
@@ -115,6 +104,7 @@ public class PlayerMove : MonoBehaviour
                 Vector2 gp = Gamepad.current.rightStick.ReadValue();
                 if (gp.sqrMagnitude > 0.001f) return gp;
             }
+
             return delta;
         }
 #endif
@@ -165,7 +155,9 @@ public class PlayerMove : MonoBehaviour
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        if (cameraTransform != null) cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        if (cameraTransform != null)
+            cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+
         transform.Rotate(Vector3.up * mouseX);
     }
 
@@ -197,7 +189,8 @@ public class PlayerMove : MonoBehaviour
     {
         bool grounded = IsGrounded();
 
-        if (grounded && velocity.y < 0f) velocity.y = -2f;
+        if (grounded && velocity.y < 0f)
+            velocity.y = -2f;
 
         if (jumpPressed && grounded)
         {
@@ -212,24 +205,33 @@ public class PlayerMove : MonoBehaviour
     {
         if (!bobEnabled || cameraTransform == null) return;
 
+        // сила эффекта: зависит от скорости движения и оттого, бежим ли мы
         float moveMagnitude = new Vector2(moveInput.x, moveInput.y).magnitude;
         float targetBobStrength = (isRunning ? 1f : 0.4f) * moveMagnitude;
+
+        // плавно интерполируем силу эффекта
         bobAmountCurrent = Mathf.Lerp(bobAmountCurrent, targetBobStrength, Time.deltaTime * bobTransitionSpeed);
 
-        if (bobAmountCurrent > 0.001f) bobTimer += Time.deltaTime * bobSpeed; else bobTimer = 0f;
+        // увеличиваем таймер только если есть сила
+        if (bobAmountCurrent > 0.001f)
+            bobTimer += Time.deltaTime * bobSpeed;
+        else
+            bobTimer = 0f;
 
+        // синусоидальные смещения
         float bobOffsetY = Mathf.Sin(bobTimer * 2f) * bobAmount * bobAmountCurrent;
         float bobOffsetX = Mathf.Sin(bobTimer) * bobSway * bobAmountCurrent;
-        float bobTilt = Mathf.Sin(bobTimer) * bobSway * 5f * bobAmountCurrent;
+        float bobTilt = Mathf.Sin(bobTimer) * bobSway * 5f * bobAmountCurrent; // небольшой крен
 
+        // комбинируем исходную позицию камеры с эффектом
         cameraTransform.localPosition = cameraOriginalLocalPos + new Vector3(bobOffsetX, bobOffsetY, 0f);
+
+        // легкий крен камеры по локальной Z для ощущения наклона
         cameraTransform.localRotation = Quaternion.Euler(cameraTransform.localRotation.eulerAngles.x, cameraTransform.localRotation.eulerAngles.y, bobTilt);
     }
 
     void OnDrawGizmosSelected()
     {
-        if (!Application.isPlaying && GetComponent<CharacterController>() == null) return;
-
         if (optionalGroundCheck != null)
         {
             Gizmos.color = Color.yellow;
@@ -248,7 +250,11 @@ public class PlayerMove : MonoBehaviour
     {
         GUI.Label(new Rect(10, 10, 500, 20), "Grounded: " + IsGrounded());
         GUI.Label(new Rect(10, 30, 500, 20), "VelocityY: " + velocity.y.ToString("F2"));
-        if (cameraTransform != null) GUI.Label(new Rect(10, 50, 500, 20), "Cam LocalY: " + cameraTransform.localPosition.y.ToString("F2"));
-        GUI.Label(new Rect(10, 70, 500, 20), "Controller Height: " + cc.height.ToString("F2"));
     }
+    
+    private void RespawnPlayer(Transform respawnAt)
+    {
+        return;
+    }
+    
 }

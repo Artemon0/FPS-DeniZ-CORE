@@ -4547,25 +4547,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36373aeacda3ca941baca61c75becc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  moveSpeed: 6
+  moveSpeed: 7.59
   runMultiplier: 1.8
   jumpHeight: 1.5
   gravity: -18
-  crouchEnabled: 0
-  crouchToggle: 0
-  crouchKey: 306
-  standHeight: 2
-  crouchHeight: 1
-  crouchTransitionSpeed: 8
-  crouchMoveSpeedMultiplier: 0.5
-  preventJumpWhileCrouched: 1
-  headroomMask:
-    serializedVersion: 2
-    m_Bits: 1
   mouseSensitivity: 0.6
   cameraTransform: {fileID: 255244420}
   lockCursor: 1
-  hideCursor: 1
   optionalGroundCheck: {fileID: 255244420}
   groundCheckRadius: 1
   groundMask:

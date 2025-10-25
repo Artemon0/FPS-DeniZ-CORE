@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Image = UnityEngine.UI.Image;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(AudioSource))]
 public class NextBotController : MonoBehaviour
@@ -9,6 +10,7 @@ public class NextBotController : MonoBehaviour
     public float speed = 3.5f;
     public float musicRange = 10f;
     public float catchRange = 2f;
+    public float catchVerticalRange = 3f;
 
     public AudioClip backgroundMusic;
     public AudioClip jumpscareSound;
@@ -23,6 +25,9 @@ public class NextBotController : MonoBehaviour
     AudioSource audioSource;
     bool isPlayingMusic = false;
     bool hasTriggered = false;
+
+    private double timer = 0;
+    
 
     void Start()
     {
@@ -43,6 +48,7 @@ public class NextBotController : MonoBehaviour
 
     void Update()
     {
+        timer += Time.deltaTime;
         if (!player || hasTriggered) return;
 
         // Immediately update the destination to the player's position
@@ -65,7 +71,7 @@ public class NextBotController : MonoBehaviour
         }
 
         // Catch Player
-        if (distance <= catchRange)
+        if (distance <= catchRange && Mathf.Abs(GetTransformPosY() - GetPlayerPosition().y) <= catchVerticalRange)
         {
             TriggerCatch();
         }
@@ -110,7 +116,8 @@ public class NextBotController : MonoBehaviour
             rect.offsetMin = Vector2.zero;
             rect.offsetMax = Vector2.zero;
 
-            Sprite sprite = Sprite.Create(jumpscareImage, new Rect(0, 0, jumpscareImage.width, jumpscareImage.height), new Vector2(0.5f, 0.5f));
+            Sprite sprite = Sprite.Create(jumpscareImage, new Rect(0, 0, jumpscareImage.width, jumpscareImage.height),
+                new Vector2(0.5f, 0.5f));
             img.sprite = sprite;
         }
 
@@ -121,4 +128,19 @@ public class NextBotController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    private Transform GetPlayerTransform()
+    {
+        return player.transform;
+    }
+    private float GetTransformPosY()
+    {
+        return transform.position.y;
+    }
+    
+    private Vector3 GetPlayerPosition()
+    {
+        return player.position;
+    }
+    
 }
