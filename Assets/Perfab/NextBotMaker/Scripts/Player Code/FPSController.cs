@@ -8,30 +8,36 @@ public class First_Person_Movement : MonoBehaviour
     private bool Sneaking = false;
     private float xRotation;
 
-    [Header("Components Needed")]
-    [SerializeField] private Transform PlayerCamera;
+    [Header("Components Needed")] [SerializeField]
+    private Transform PlayerCamera;
+
     [SerializeField] private CharacterController Controller;
     [SerializeField] private Transform Player;
-    [Space]
-    [Header("Movement")]
-    [SerializeField] private float Speed;
+
+    [Space] [Header("Movement")] [SerializeField]
+    private float Speed;
+
     [SerializeField] private float JumpForce;
     [SerializeField] private float Sensetivity;
     [SerializeField] private float Gravity = 9.81f;
-    [Space]
-    [Header("Sneaking")]
-    [SerializeField] private bool Sneak = false;
+
+    [Space] [Header("Sneaking")] [SerializeField]
+    private bool Sneak = false;
+
     [SerializeField] private float SneakSpeed;
+
+    private double timer = 0.0;
+    private bool isDied = false;
+    private Vector3 respawnAt = new Vector3(-23.41f, 0f, -4.81f);
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked; 
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
-
         PlayerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         PlayerMouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
@@ -43,12 +49,32 @@ public class First_Person_Movement : MonoBehaviour
             Player.localScale = new Vector3(1f, 0.5f, 1f);
             Sneaking = true;
         }
+
         if (Input.GetKeyUp(KeyCode.RightShift))
         {
             Player.localScale = new Vector3(1f, 1f, 1f);
             Sneaking = false;
         }
+        
+
+        if (GetPlayerPosition().y < -10)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        }
+        timer += Time.deltaTime;
+
+        if (isRespawnButtonPressed(KeyCode.R) && timer > 2.0)
+        {
+            isDied = true;
+        }
+
+        // if (isDied) // if is died = false, respawn the player
+        // {
+        //     RespawnPlayer(respawnAt);
+        // }
+        
     }
+
     private void MovePlayer()
     {
         Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput);
@@ -67,6 +93,7 @@ public class First_Person_Movement : MonoBehaviour
         {
             Velocity.y += Gravity * -2f * Time.deltaTime;
         }
+
         if (Sneaking)
         {
             Controller.Move(MoveVector * SneakSpeed * Time.deltaTime);
@@ -75,9 +102,10 @@ public class First_Person_Movement : MonoBehaviour
         {
             Controller.Move(MoveVector * Speed * Time.deltaTime);
         }
-        Controller.Move(Velocity * Time.deltaTime);
 
+        Controller.Move(Velocity * Time.deltaTime);
     }
+
     private void MoveCamera()
     {
         xRotation -= PlayerMouseInput.y * Sensetivity;
@@ -86,4 +114,26 @@ public class First_Person_Movement : MonoBehaviour
         transform.Rotate(0f, PlayerMouseInput.x * Sensetivity, 0f);
         PlayerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
     }
+
+    private Vector3 GetPlayerPosition()
+    {
+        return Player.transform.position;
+    }
+    
+    private void SetPlayerPosition(Vector3 newPosition)
+    {
+        Player.transform.position = newPosition;
+    }
+    
+    // I need to respawn the player at a specific position
+    private void RespawnPlayer() // respawn at new scene with timer
+    {
+        
+    }
+    
+    private bool isRespawnButtonPressed(KeyCode key)
+    {
+        return Input.GetKey(key);
+    }
+    
 }

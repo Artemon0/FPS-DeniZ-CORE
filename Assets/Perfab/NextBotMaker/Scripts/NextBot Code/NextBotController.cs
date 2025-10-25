@@ -110,7 +110,8 @@ public class NextBotController : MonoBehaviour
             rect.offsetMin = Vector2.zero;
             rect.offsetMax = Vector2.zero;
 
-            Sprite sprite = Sprite.Create(jumpscareImage, new Rect(0, 0, jumpscareImage.width, jumpscareImage.height), new Vector2(0.5f, 0.5f));
+            Sprite sprite = Sprite.Create(jumpscareImage, new Rect(0, 0, jumpscareImage.width, jumpscareImage.height),
+                new Vector2(0.5f, 0.5f));
             img.sprite = sprite;
         }
 
