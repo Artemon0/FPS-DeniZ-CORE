@@ -11,6 +11,7 @@ public class NextBotController : MonoBehaviour
     public float musicRange = 10f;
     public float catchRange = 2f;
     public float catchVerticalRange = 3f;
+    public float timerNotKill = 3f;
 
     public AudioClip backgroundMusic;
     public AudioClip jumpscareSound;
@@ -26,8 +27,8 @@ public class NextBotController : MonoBehaviour
     bool isPlayingMusic = false;
     bool hasTriggered = false;
 
-    private double timer = 0.0;
-    
+    public double timer = 0.0;
+
 
     void Start()
     {
@@ -49,7 +50,9 @@ public class NextBotController : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (!player || hasTriggered  && timer > 2) return;
+        if (timer < timerNotKill) hasTriggered = false;
+
+        if (!player || hasTriggered) return;
 
         // Immediately update the destination to the player's position
         agent.SetDestination(player.position);
@@ -71,7 +74,7 @@ public class NextBotController : MonoBehaviour
         }
 
         // Catch Player
-        if (distance <= catchRange && Mathf.Abs(GetTransformPosY() - GetPlayerPosition().y) <= catchVerticalRange)
+        if (distance <= catchRange && timer > timerNotKill)
         {
             TriggerCatch();
         }
@@ -79,7 +82,7 @@ public class NextBotController : MonoBehaviour
 
     void TriggerCatch()
     {
-        if (hasTriggered && timer > 2) {return;}
+        if (hasTriggered /*&& GetPlayerY() - GetBotY()*/) return;
         hasTriggered = true;
 
         // Stop all AudioSources in the scene
@@ -129,18 +132,14 @@ public class NextBotController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    private Transform GetPlayerTransform()
+    private void TeleportTo(Vector3 newPosition)
     {
-        return player.transform;
+        player.position = newPosition;
     }
-    private float GetTransformPosY()
+
+    private void TeleportToNewScene(string sceneName, Vector3 newPosition)
     {
-        return transform.position.y;
+        SceneManager.LoadScene(sceneName);
+        player.position = newPosition;
     }
-    
-    private Vector3 GetPlayerPosition()
-    {
-        return player.position;
-    }
-    
 }

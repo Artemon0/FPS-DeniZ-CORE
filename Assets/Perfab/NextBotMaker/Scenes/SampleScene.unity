@@ -119,6 +119,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &111505688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4287342145741584038, guid: 045bbaa1e5054c347bfc411a84247968, type: 3}
+  m_PrefabInstance: {fileID: 1652561746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &111505696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111505688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67876b28945c06649ae3e7acea7de5e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimerSceneBridge
+  fromSceneName: SampleScene
+  toSceneName: TimerScene
+  nextBotPrefab: {fileID: 2086415864}
+  uiFont: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+  format: F2
 --- !u!21 &628648082
 Material:
   serializedVersion: 8
@@ -372,6 +394,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4287342145741584038, guid: 045bbaa1e5054c347bfc411a84247968, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 111505696}
     - targetCorrespondingSourceObject: {fileID: 7425879433215551979, guid: 045bbaa1e5054c347bfc411a84247968, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2095232443}
@@ -415,12 +440,14 @@ MonoBehaviour:
   musicRange: 12
   catchRange: 2
   catchVerticalRange: 3
+  timerNotKill: 3
   backgroundMusic: {fileID: 0}
   jumpscareSound: {fileID: 8300000, guid: 1a91fcd19acf1e54bba0945d9f390849, type: 3}
   jumpscareImage: {fileID: 2800000, guid: aa3717036f0c9c74fad49525a6c2d3e0, type: 3}
   restartDelay: 1
   angularSpeed: 1000
   decelerationRate: 1000
+  timer: 0
 --- !u!82 &2086415865
 AudioSource:
   m_ObjectHideFlags: 0

@@ -69,6 +69,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\PlayerInputActions.cs" />
     <Compile Include="Assets\Scripts\MyFPSController.cs" />
+    <Compile Include="Assets\Scripts\TimerScene.cs" />
     <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
