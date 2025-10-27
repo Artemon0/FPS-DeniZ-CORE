@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Loader.unity
     guid: edd4f11232c8fee4eb91a1269e7298f4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartJourney.unity
     guid: 1a795a24d6ebd304a84b98096fdef8e8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartJourney_Lighting.unity
     guid: 756ede6ad20f3ef48b82fc94d3666ae1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartJourney_Env.unity
     guid: b30ae1fefe88f5e4a9e12b818d23addd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartJourney_Scatter.unity
     guid: 84e99b5aae0734543b07be9d126603e0
   m_configObjects:
