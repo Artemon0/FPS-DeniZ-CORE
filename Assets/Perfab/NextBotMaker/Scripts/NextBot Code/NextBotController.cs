@@ -3,6 +3,7 @@ using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
+using TMPro;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(AudioSource))]
 public class NextBotController : MonoBehaviour
@@ -27,7 +28,7 @@ public class NextBotController : MonoBehaviour
     bool isPlayingMusic = false;
     bool hasTriggered = false;
 
-    public double timer = 0.0;
+    private double timer = 0.0;
 
 
     void Start()
@@ -124,7 +125,7 @@ public class NextBotController : MonoBehaviour
             img.sprite = sprite;
         }
 
-        Invoke(nameof(RestartLevel), restartDelay);
+        Invoke(nameof(Timer), restartDelay);
     }
 
     void RestartLevel()
@@ -132,14 +133,28 @@ public class NextBotController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    private void TeleportTo(Vector3 newPosition)
+    void Timer()
     {
-        player.position = newPosition;
-    }
+        GameObject canvasGO = new GameObject("Canvas");
+        Canvas canvas = canvasGO.AddComponent<Canvas>();
+        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvasGO.AddComponent<CanvasScaler>();
+        canvasGO.AddComponent<GraphicRaycaster>();
 
-    private void TeleportToNewScene(string sceneName, Vector3 newPosition)
-    {
-        SceneManager.LoadScene(sceneName);
-        player.position = newPosition;
+        // tmp text
+        GameObject textGO = new GameObject("TMPText");
+        textGO.transform.SetParent(canvasGO.transform, false);
+
+        TextMeshProUGUI tmp = textGO.AddComponent<TextMeshProUGUI>();
+        tmp.text = "You survived {} seconds!".Replace("{}", ((int)timer).ToString());
+        tmp.fontSize = 90;
+        tmp.alignment = TextAlignmentOptions.Center;
+        tmp.color = Color.red;
+
+        RectTransform rt = tmp.GetComponent<RectTransform>();
+        rt.sizeDelta = new Vector2(600, 200);
+        rt.anchoredPosition = Vector2.zero;
+        // Thread.Sleep(5000);
+        RestartLevel();
     }
 }
