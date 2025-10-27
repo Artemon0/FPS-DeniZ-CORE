@@ -3,7 +3,7 @@ using UnityEngine;
 public class CenterDotOnGUI : MonoBehaviour
 {
     public Color color = Color.red;
-    public int size = 5;
+    public int size = 10;
 
     void OnGUI()
     {

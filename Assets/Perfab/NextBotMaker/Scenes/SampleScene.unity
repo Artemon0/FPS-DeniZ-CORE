@@ -136,13 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67876b28945c06649ae3e7acea7de5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimerSceneBridge
-  fromSceneName: SampleScene
-  toSceneName: TimerScene
-  nextBotPrefab: {fileID: 2086415864}
-  uiFont: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-  format: F2
-  persistentBot: {fileID: 0}
-  timerTextInstance: {fileID: 0}
 --- !u!21 &628648082
 Material:
   serializedVersion: 8
@@ -705,7 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CenterDotOnGUI
   color: {r: 1, g: 0, b: 0, a: 1}
-  size: 5
+  size: 10
 --- !u!1001 &1468424809623646947
 PrefabInstance:
   m_ObjectHideFlags: 0

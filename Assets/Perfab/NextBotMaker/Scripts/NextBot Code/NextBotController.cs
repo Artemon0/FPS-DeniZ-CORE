@@ -135,6 +135,8 @@ public class NextBotController : MonoBehaviour
 
     void Timer()
     {
+        timer -= 3f + restartDelay;
+        
         GameObject canvasGO = new GameObject("Canvas");
         Canvas canvas = canvasGO.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
@@ -148,8 +150,7 @@ public class NextBotController : MonoBehaviour
         TextMeshProUGUI tmp = textGO.AddComponent<TextMeshProUGUI>();
         tmp.text = "You survived {} seconds!".Replace("{}", ((int)timer).ToString());
         tmp.fontSize = 90;
-        tmp.alignment = TextAlignmentOptions.Center;
-        tmp.color = Color.red;
+        tmp.alignment = TextAlignmentOptions.Center; tmp.color = Color.red;
 
         RectTransform rt = tmp.GetComponent<RectTransform>();
         rt.sizeDelta = new Vector2(600, 200);
