@@ -1,11 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class First_Person_Movement : MonoBehaviour
 {
     private Vector3 Velocity;
     private Vector3 PlayerMovementInput;
     private Vector2 PlayerMouseInput;
-    private bool Sneaking = false;
     private float xRotation;
 
     [Header("Components Needed")] [SerializeField]
@@ -21,14 +21,6 @@ public class First_Person_Movement : MonoBehaviour
     [SerializeField] private float Sensetivity;
     [SerializeField] private float Gravity = 9.81f;
 
-    [Space] [Header("Sneaking")] [SerializeField]
-    private bool Sneak = false;
-
-    [SerializeField] private float SneakSpeed;
-
-    private double timer = 0.0;
-    private bool isDied = false;
-    private Vector3 respawnAt = new Vector3(-23.41f, 0f, -4.81f);
 
     void Start()
     {
@@ -44,35 +36,18 @@ public class First_Person_Movement : MonoBehaviour
         MovePlayer();
         MoveCamera();
 
-        if (Input.GetKey(KeyCode.RightShift) && Sneak)
-        {
-            Player.localScale = new Vector3(1f, 0.5f, 1f);
-            Sneaking = true;
-        }
-
-        if (Input.GetKeyUp(KeyCode.RightShift))
-        {
-            Player.localScale = new Vector3(1f, 1f, 1f);
-            Sneaking = false;
-        }
-        
-
         if (GetPlayerPosition().y < -10)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0);
         }
-        timer += Time.deltaTime;
 
-        if (isRespawnButtonPressed(KeyCode.R) && timer > 2.0)
+
+        if (Input.GetButton("Escape"))
         {
-            isDied = true;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene(0);
         }
-
-        // if (isDied) // if is died = false, respawn the player
-        // {
-        //     RespawnPlayer(respawnAt);
-        // }
-        
     }
 
     private void MovePlayer()
@@ -84,7 +59,7 @@ public class First_Person_Movement : MonoBehaviour
         {
             Velocity.y = -1f;
 
-            if (Input.GetKeyDown(KeyCode.Space) && Sneaking == false)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 Velocity.y = JumpForce;
             }
@@ -94,14 +69,8 @@ public class First_Person_Movement : MonoBehaviour
             Velocity.y += Gravity * -2f * Time.deltaTime;
         }
 
-        if (Sneaking)
-        {
-            Controller.Move(MoveVector * SneakSpeed * Time.deltaTime);
-        }
-        else
-        {
-            Controller.Move(MoveVector * Speed * Time.deltaTime);
-        }
+        Controller.Move(MoveVector * Speed * Time.deltaTime);
+
 
         Controller.Move(Velocity * Time.deltaTime);
     }
@@ -119,21 +88,19 @@ public class First_Person_Movement : MonoBehaviour
     {
         return Player.transform.position;
     }
-    
+
     private void SetPlayerPosition(Vector3 newPosition)
     {
         Player.transform.position = newPosition;
     }
-    
+
     // I need to respawn the player at a specific position
     private void RespawnPlayer() // respawn at new scene with timer
     {
-        
     }
-    
+
     private bool isRespawnButtonPressed(KeyCode key)
     {
         return Input.GetKey(key);
     }
-    
 }

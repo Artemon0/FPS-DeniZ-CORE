@@ -49,7 +49,7 @@ public class PlayerMove : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             // Cursor.visible = false;
-            Cursor.visible = true;
+            Cursor.visible = false;
            
         }
     }
@@ -248,13 +248,19 @@ public class PlayerMove : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 500, 20), "Grounded: " + IsGrounded());
-        GUI.Label(new Rect(10, 30, 500, 20), "VelocityY: " + velocity.y.ToString("F2"));
+        GUI.Label(new Rect(20, 40, 500, 20), "Grounded: " + IsGrounded());
+        GUI.Label(new Rect(20, 40, 500, 20), "VelocityY: " + velocity.y.ToString("F2"));
     }
     
-    private void RespawnPlayer(Transform respawnAt)
+
+    private bool isPlayerUnderMap()
     {
-        return;
+        if (cameraTransform.position.y < -10)
+        {
+            return true;
+        }
+
+        return false;
     }
     
 }
