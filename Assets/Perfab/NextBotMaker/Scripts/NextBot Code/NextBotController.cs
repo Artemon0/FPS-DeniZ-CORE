@@ -143,7 +143,7 @@ public class NextBotController : MonoBehaviour
         canvasGO.AddComponent<CanvasScaler>();
         canvasGO.AddComponent<GraphicRaycaster>();
 
-        // tmp text
+        // Tmp text
         GameObject textGO = new GameObject("TMPText");
         textGO.transform.SetParent(canvasGO.transform, false);
 
@@ -155,7 +155,6 @@ public class NextBotController : MonoBehaviour
         RectTransform rt = tmp.GetComponent<RectTransform>();
         rt.sizeDelta = new Vector2(600, 200);
         rt.anchoredPosition = Vector2.zero;
-        // Thread.Sleep(5000);
         RestartLevel();
     }
 }

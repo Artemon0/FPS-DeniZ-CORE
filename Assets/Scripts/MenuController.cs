@@ -27,6 +27,8 @@ public class RuntimeMenuCreatorScene : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         EnsureEventSystemSafe();
         CreateMenu();
     }
