@@ -30,6 +30,13 @@ public class NextBotController : MonoBehaviour
 
     private double timer = 0.0;
 
+    private static Canvas gameOverCanvas;
+    private static TextMeshProUGUI gameOverText;
+    private static Canvas jumpscareCanvas;
+    private static Image jumpscareImageUI;
+
+    private float nextPathUpdateTime;
+    private const float PATH_UPDATE_RATE = 0.2f; // Обновлять путь каждые 0.2 секунды
 
     void Start()
     {
@@ -37,15 +44,63 @@ public class NextBotController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         audioSource = GetComponent<AudioSource>();
         agent.speed = speed;
-
-        // Set the angular speed for fast turns
         agent.angularSpeed = angularSpeed;
-
-        // Set a higher deceleration rate to stop faster
         agent.acceleration = decelerationRate;
-
-        // Enable rotation update
         agent.updateRotation = true;
+
+        // Создаём UI только один раз для всех NextBot'ов
+        if (gameOverCanvas == null)
+        {
+            CreateGameOverUI();
+        }
+        if (jumpscareCanvas == null)
+        {
+            CreateJumpscareUI();
+        }
+    }
+
+    void CreateJumpscareUI()
+    {
+        GameObject canvasGO = new GameObject("JumpscareCanvas");
+        jumpscareCanvas = canvasGO.AddComponent<Canvas>();
+        jumpscareCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvasGO.AddComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        canvasGO.AddComponent<GraphicRaycaster>();
+
+        GameObject imageGO = new GameObject("JumpscareImage");
+        imageGO.transform.SetParent(jumpscareCanvas.transform, false);
+        jumpscareImageUI = imageGO.AddComponent<Image>();
+
+        RectTransform rect = jumpscareImageUI.rectTransform;
+        rect.anchorMin = Vector2.zero;
+        rect.anchorMax = Vector2.one;
+        rect.offsetMin = Vector2.zero;
+        rect.offsetMax = Vector2.zero;
+
+        jumpscareCanvas.gameObject.SetActive(false);
+    }
+
+    void CreateGameOverUI()
+    {
+        GameObject canvasGO = new GameObject("GameOverCanvas");
+        gameOverCanvas = canvasGO.AddComponent<Canvas>();
+        gameOverCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvasGO.AddComponent<CanvasScaler>();
+        canvasGO.AddComponent<GraphicRaycaster>();
+
+        GameObject textGO = new GameObject("GameOverText");
+        textGO.transform.SetParent(gameOverCanvas.transform, false);
+
+        gameOverText = textGO.AddComponent<TextMeshProUGUI>();
+        gameOverText.fontSize = 90;
+        gameOverText.alignment = TextAlignmentOptions.Center;
+        gameOverText.color = Color.red;
+
+        RectTransform rt = gameOverText.GetComponent<RectTransform>();
+        rt.sizeDelta = new Vector2(600, 200);
+        rt.anchoredPosition = Vector2.zero;
+
+        gameOverCanvas.gameObject.SetActive(false);
     }
 
     void Update()
@@ -55,10 +110,14 @@ public class NextBotController : MonoBehaviour
 
         if (!player || hasTriggered) return;
 
-        // Immediately update the destination to the player's position
-        agent.SetDestination(player.position);
-
         float distance = Vector3.Distance(transform.position, player.position);
+
+        // Обновляем путь только с определённой частотой
+        if (Time.time >= nextPathUpdateTime)
+        {
+            agent.SetDestination(player.position);
+            nextPathUpdateTime = Time.time + PATH_UPDATE_RATE;
+        }
 
         if (backgroundMusic && distance <= musicRange && !isPlayingMusic)
         {
@@ -83,49 +142,60 @@ public class NextBotController : MonoBehaviour
 
     void TriggerCatch()
     {
-        if (hasTriggered /*&& GetPlayerY() - GetBotY()*/) return;
+        if (hasTriggered) return;
         hasTriggered = true;
 
-        // Stop all AudioSources in the scene
-        foreach (AudioSource source in FindObjectsOfType<AudioSource>())
+        // Останавливаем только текущий источник звука вместо поиска всех
+        if (audioSource.isPlaying)
         {
-            source.Stop();
+            audioSource.Stop();
         }
 
-        // Play the jumpscare sound with a temporary AudioSource
+        // Воспроизводим звук джампскера
         if (jumpscareSound)
         {
-            GameObject tempAudio = new GameObject("JumpscareAudio");
-            AudioSource jumpscareSource = tempAudio.AddComponent<AudioSource>();
-            jumpscareSource.clip = jumpscareSound;
-            jumpscareSource.Play();
-            Destroy(tempAudio, jumpscareSound.length);
+            audioSource.clip = jumpscareSound;
+            audioSource.loop = false;
+            audioSource.Play();
         }
 
-        // Show jumpscare image
-        if (jumpscareImage)
+        // Показываем джампскер
+        if (jumpscareImage && jumpscareCanvas != null)
         {
-            GameObject canvasGO = new GameObject("JumpscareCanvas");
-            Canvas canvas = canvasGO.AddComponent<Canvas>();
-            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-            canvasGO.AddComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-            canvasGO.AddComponent<GraphicRaycaster>();
-
-            GameObject imageGO = new GameObject("JumpscareImage");
-            imageGO.transform.SetParent(canvasGO.transform, false);
-            Image img = imageGO.AddComponent<Image>();
-            RectTransform rect = imageGO.GetComponent<RectTransform>();
-            rect.anchorMin = Vector2.zero;
-            rect.anchorMax = Vector2.one;
-            rect.offsetMin = Vector2.zero;
-            rect.offsetMax = Vector2.zero;
-
-            Sprite sprite = Sprite.Create(jumpscareImage, new Rect(0, 0, jumpscareImage.width, jumpscareImage.height),
-                new Vector2(0.5f, 0.5f));
-            img.sprite = sprite;
+            ShowJumpscareImage();
         }
 
         Invoke(nameof(Timer), restartDelay);
+    }
+
+    void ShowJumpscareImage()
+    {
+        GameObject canvasGO = new GameObject("JumpscareCanvas");
+        jumpscareCanvas = canvasGO.AddComponent<Canvas>();
+        jumpscareCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvasGO.AddComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        jumpscareImageUI.sprite = Sprite.Create(jumpscareImage,
+            new Rect(0, 0, jumpscareImage.width, jumpscareImage.height),
+            new Vector2(0.5f, 0.5f));
+        jumpscareCanvas.gameObject.SetActive(true);
+        canvasGO.AddComponent<GraphicRaycaster>();
+
+        GameObject imageGO = new GameObject("JumpscareImage");
+        imageGO.transform.SetParent(canvasGO.transform, false);
+        Image img = imageGO.AddComponent<Image>();
+
+        RectTransform rect = img.rectTransform;
+        rect.anchorMin = Vector2.zero;
+        rect.anchorMax = Vector2.one;
+        rect.offsetMin = Vector2.zero;
+        rect.offsetMax = Vector2.zero;
+
+        if (jumpscareImage != null)
+        {
+            img.sprite = Sprite.Create(jumpscareImage,
+                new Rect(0, 0, jumpscareImage.width, jumpscareImage.height),
+                new Vector2(0.5f, 0.5f));
+        }
     }
 
     void RestartLevel()
@@ -133,28 +203,17 @@ public class NextBotController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    [SerializeField] float timeToShow = 3f;
     void Timer()
     {
         timer -= 3f + restartDelay;
-        
-        GameObject canvasGO = new GameObject("Canvas");
-        Canvas canvas = canvasGO.AddComponent<Canvas>();
-        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvasGO.AddComponent<CanvasScaler>();
-        canvasGO.AddComponent<GraphicRaycaster>();
 
-        // Tmp text
-        GameObject textGO = new GameObject("TMPText");
-        textGO.transform.SetParent(canvasGO.transform, false);
+        if (gameOverText != null)
+        {
+            gameOverText.text = "You survived " + (int)timer + " seconds!";
+            gameOverCanvas.gameObject.SetActive(true);
+        }
 
-        TextMeshProUGUI tmp = textGO.AddComponent<TextMeshProUGUI>();
-        tmp.text = "You survived {} seconds!".Replace("{}", ((int)timer).ToString());
-        tmp.fontSize = 90;
-        tmp.alignment = TextAlignmentOptions.Center; tmp.color = Color.red;
-
-        RectTransform rt = tmp.GetComponent<RectTransform>();
-        rt.sizeDelta = new Vector2(600, 200);
-        rt.anchoredPosition = Vector2.zero;
-        RestartLevel();
+        Invoke(nameof(RestartLevel), timeToShow);
     }
 }

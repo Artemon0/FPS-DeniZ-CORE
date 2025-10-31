@@ -93,14 +93,4 @@ public class First_Person_Movement : MonoBehaviour
     {
         Player.transform.position = newPosition;
     }
-
-    // I need to respawn the player at a specific position
-    private void RespawnPlayer() // respawn at new scene with timer
-    {
-    }
-
-    private bool isRespawnButtonPressed(KeyCode key)
-    {
-        return Input.GetKey(key);
-    }
 }
