@@ -9,6 +9,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: brick_brickwall003a_construct
     second: {fileID: 2100000, guid: 2bb88dcd6c6adc04d8dc843ac80cd885, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brick_brickwall053e
+    second: {fileID: 2100000, guid: 2bb88dcd6c6adc04d8dc843ac80cd885, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: building_template_building_template003a
+    second: {fileID: 2100000, guid: 2bb88dcd6c6adc04d8dc843ac80cd885, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

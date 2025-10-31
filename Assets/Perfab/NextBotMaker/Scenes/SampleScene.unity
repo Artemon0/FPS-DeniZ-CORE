@@ -358,6 +358,7 @@ MonoBehaviour:
   restartDelay: 1
   angularSpeed: 1000
   decelerationRate: 1000
+  timeToShow: 3
 --- !u!82 &780019691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -606,11 +607,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5355d1a4e91853a439f818656b24eb6c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -91.549065
+      value: -81.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5355d1a4e91853a439f818656b24eb6c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.24
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5355d1a4e91853a439f818656b24eb6c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -763,6 +764,7 @@ MonoBehaviour:
   restartDelay: 1
   angularSpeed: 1000
   decelerationRate: 1000
+  timeToShow: 3
 --- !u!82 &1993134331
 AudioSource:
   m_ObjectHideFlags: 0

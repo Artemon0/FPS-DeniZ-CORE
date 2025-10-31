@@ -38,6 +38,9 @@ public class NextBotController : MonoBehaviour
     private float nextPathUpdateTime;
     private const float PATH_UPDATE_RATE = 0.2f; // Обновлять путь каждые 0.2 секунды
 
+    private Vector3 lastPlayerPosition;
+    private const float UPDATE_THRESHOLD = 0.1f;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
@@ -47,6 +50,7 @@ public class NextBotController : MonoBehaviour
         agent.angularSpeed = angularSpeed;
         agent.acceleration = decelerationRate;
         agent.updateRotation = true;
+        lastPlayerPosition = Vector3.zero;
 
         // Создаём UI только один раз для всех NextBot'ов
         if (gameOverCanvas == null)
@@ -61,6 +65,9 @@ public class NextBotController : MonoBehaviour
 
     void CreateJumpscareUI()
     {
+        // Используем пул объектов или проверяем существование
+        if (jumpscareCanvas != null) return;
+
         GameObject canvasGO = new GameObject("JumpscareCanvas");
         jumpscareCanvas = canvasGO.AddComponent<Canvas>();
         jumpscareCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
@@ -76,6 +83,14 @@ public class NextBotController : MonoBehaviour
         rect.anchorMax = Vector2.one;
         rect.offsetMin = Vector2.zero;
         rect.offsetMax = Vector2.zero;
+
+        // Создаём спрайт один раз при инициализации
+        if (jumpscareImage != null)
+        {
+            jumpscareImageUI.sprite = Sprite.Create(jumpscareImage,
+                new Rect(0, 0, jumpscareImage.width, jumpscareImage.height),
+                new Vector2(0.5f, 0.5f));
+        }
 
         jumpscareCanvas.gameObject.SetActive(false);
     }
@@ -110,27 +125,33 @@ public class NextBotController : MonoBehaviour
 
         if (!player || hasTriggered) return;
 
-        float distance = Vector3.Distance(transform.position, player.position);
+        Vector3 currentPlayerPos = player.position;
+        float distance = Vector3.Distance(transform.position, currentPlayerPos);
 
-        // Обновляем путь только с определённой частотой
-        if (Time.time >= nextPathUpdateTime)
+        // Обновляем путь только если игрок значительно переместился
+        if (Time.time >= nextPathUpdateTime && 
+            Vector3.Distance(currentPlayerPos, lastPlayerPosition) > UPDATE_THRESHOLD)
         {
-            agent.SetDestination(player.position);
+            agent.SetDestination(currentPlayerPos);
             nextPathUpdateTime = Time.time + PATH_UPDATE_RATE;
+            lastPlayerPosition = currentPlayerPos;
         }
 
-        if (backgroundMusic && distance <= musicRange && !isPlayingMusic)
+        // Оптимизация проверки расстояния для музыки
+        if (backgroundMusic)
         {
-            audioSource.clip = backgroundMusic;
-            audioSource.loop = true;
-            audioSource.Play();
-            isPlayingMusic = true;
-        }
-
-        if (isPlayingMusic && distance > musicRange)
-        {
-            audioSource.Stop();
-            isPlayingMusic = false;
+            if (distance <= musicRange && !isPlayingMusic)
+            {
+                audioSource.clip = backgroundMusic;
+                audioSource.loop = true;
+                audioSource.Play();
+                isPlayingMusic = true;
+            }
+            else if (isPlayingMusic && distance > musicRange)
+            {
+                audioSource.Stop();
+                isPlayingMusic = false;
+            }
         }
 
         // Catch Player
@@ -170,31 +191,9 @@ public class NextBotController : MonoBehaviour
 
     void ShowJumpscareImage()
     {
-        GameObject canvasGO = new GameObject("JumpscareCanvas");
-        jumpscareCanvas = canvasGO.AddComponent<Canvas>();
-        jumpscareCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvasGO.AddComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-        jumpscareImageUI.sprite = Sprite.Create(jumpscareImage,
-            new Rect(0, 0, jumpscareImage.width, jumpscareImage.height),
-            new Vector2(0.5f, 0.5f));
-        jumpscareCanvas.gameObject.SetActive(true);
-        canvasGO.AddComponent<GraphicRaycaster>();
-
-        GameObject imageGO = new GameObject("JumpscareImage");
-        imageGO.transform.SetParent(canvasGO.transform, false);
-        Image img = imageGO.AddComponent<Image>();
-
-        RectTransform rect = img.rectTransform;
-        rect.anchorMin = Vector2.zero;
-        rect.anchorMax = Vector2.one;
-        rect.offsetMin = Vector2.zero;
-        rect.offsetMax = Vector2.zero;
-
-        if (jumpscareImage != null)
+        if (jumpscareCanvas != null)
         {
-            img.sprite = Sprite.Create(jumpscareImage,
-                new Rect(0, 0, jumpscareImage.width, jumpscareImage.height),
-                new Vector2(0.5f, 0.5f));
+            jumpscareCanvas.gameObject.SetActive(true);
         }
     }
 
