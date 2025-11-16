@@ -42,7 +42,7 @@ public class First_Person_Movement : MonoBehaviour
         }
 
 
-        if (Input.GetButton("Escape"))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
