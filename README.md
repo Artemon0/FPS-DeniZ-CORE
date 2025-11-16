@@ -1,6 +1,6 @@
 # FPS-DeniZ-CORE
 
-It is a Game that programming by 2 Ukranian 12 year boys. 
+It is a Game that programming by 2 Russian 12 year boys. 
 
 **Go to releases and download latest version.**
 
